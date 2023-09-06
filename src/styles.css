@@ -1,0 +1,198 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(./assets/fonts/Roboto-bold.ttf);
+}
+.containerAll {
+  background-color: rgb(63, 63, 104);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerBox {
+  width: 880px;
+  height: 580px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  border-radius: 30px;
+  justify-content: space-between;
+  font-family: "Roboto-Regular", sans-serif;
+}
+.tksBox {
+    width: 500px;
+    height: 520px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+    font-family: "Roboto-Regular", sans-serif;
+  }
+
+.title {
+  font-family: "Roboto-bold", sans-serif;
+  color: rgb(63, 63, 104);
+  font-size: 3rem;
+  margin: 30px 0 20px 0;
+}
+.texts .join {
+  padding: 0 0 10px 0;
+}
+.containerAll .texts {
+  padding: 0 30px 30px 30px;
+  margin: 20px;
+  font-size: 0.9rem;
+  color: rgb(63, 63, 104);
+  font-weight: 600;
+}
+.list {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.list .successImg {
+  margin-right: 10px;
+}
+.inputButton {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.inputButton input {
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  border: 1px solid gray;
+}
+.inputButton input:focus {
+  border-color: rgb(0, 0, 0);
+  outline: 0;
+}
+
+.inputButton button {
+  padding: 20px;
+  color: white;
+  background-color: rgb(63, 63, 104);
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.successImg {
+  width: 20px;
+}
+
+.imgRight {
+  height: 540px;
+}
+.email {
+  font-size: 0.7rem;
+  font-family: "Roboto-bold", sans-serif;
+  font-weight: bold;
+}
+.imgMobile {
+  display: none;
+}
+.invalidEmail {
+  background-color: rgba(255, 0, 0, 0.282);
+  border: 1px solid red !important;
+  color: red;
+}
+.divInvalidMsg {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 10px;
+}
+.invalidMsg {
+  font-size: 0.7rem;
+  color: red;
+}
+
+.validEmail {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black !important;
+}
+
+.subContainer {
+  display: flex !important;
+}
+
+/* box THANKS */
+
+.invisible {
+  display: none !important;
+}
+.visible {
+  display: flex !important;
+}
+
+.boxThanks {
+  width: 500px;
+  height: 500px;
+  border-radius: 35px;
+  padding: 55px;
+  display: none;
+  background-color: white;
+  flex-direction: column;
+}
+.textTks {
+    font-size: 0.9rem;
+    color: rgb(63, 63, 104);
+    font-weight: 500;
+}
+.textTks span {
+    font-weight: bold;
+}
+.btnTks {
+  padding: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(to left, rgb(241, 123, 45), rgb(247, 41, 120));
+  margin-top: 40px;
+}
+
+
+@media (max-width: 800px) {
+  .inputButton button {
+    padding: 10px;
+    margin-top: 5px;
+  }
+  .containerAll .texts {
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .containerAll .texts h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .containerBox {
+    width: 600px;
+    height: 100vh;
+    flex-direction: column-reverse;
+    padding: 0;
+    border-radius: 0;
+    justify-content: start;
+  }
+  .imgRight {
+    display: none;
+  }
+  .imgMobile {
+    display: block;
+    width: 100%;
+  }
+}
